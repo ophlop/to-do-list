@@ -1,0 +1,45 @@
+@import "../variabless.scss";
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    font-size: $btnFont;
+    cursor: pointer;
+    font-family: $fontFamily;
+}
+    
+button:disabled {
+    color: $darkGray;
+    background-color: $grafitGray;
+}
+    
+.sample {
+    color: $darkGray;
+    background-color: $lightGray;
+}
+    
+.sample:hover {
+    color: $white;
+    background-color: $grafitGray
+}
+    
+.danger {
+    color: $white;
+    background-color: $dangerRed;
+}
+    
+.danger:hover {
+    background-color: $darkenRed
+}
+    
+.primary {
+    color: $veryLightGray;
+    background-color: $darkGray;
+}
+    
+.primary:hover {
+    background-color: $deepGray;    
+}

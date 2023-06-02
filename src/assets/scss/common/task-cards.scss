@@ -1,0 +1,78 @@
+@import "../variabless.scss";
+@import "../elements/input-checkbox.scss";
+
+.tasks-cards {
+    width: 94%;
+    height: fit-content;
+    border: 0;
+    border-radius: 10px;
+    background-color: $darkGray;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+        
+
+    @media (max-width: $md) {
+        width: 260px;
+        padding: 20px;
+    }
+    
+        .tasks-cards__header {
+            width: 100%;
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            @media (max-width: $md) {
+                display: block;
+            }
+    
+            .tasks-cards__title {
+                cursor: pointer;
+                display: flex;
+                gap: 20px;
+            }
+    
+            .cards-btns {
+                display: flex;
+                gap: 20px;
+            }
+        }
+        
+        .tasks-cards__description {
+            font-family: $fontFamily;
+            font-size: 18px;
+
+            @media (max-width: $md) {
+                font-size: 14px;
+            }
+            
+        }
+
+        .task-steps-info {
+            width: 99%;
+
+            @media (max-width: $md) {
+                width: 94%
+            }
+            
+            .steps-list {
+                width: 98%;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 20px;
+                background-color: $white;
+                border: 0;
+                border-radius: 10px;
+                padding: 10px;
+
+                input[type="checkbox"]::after {
+                    top: -6px;
+                }
+            }
+        }
+    }
