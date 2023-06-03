@@ -12,11 +12,10 @@
 
 <script>
 import AppTitle from '../UI/AppTitle.vue'
-import AppButton from '../UI/AppButton.vue'
 
   export default {
     emits: ['cancel', 'close'],
-    components: { AppTitle, AppButton },
+    components: { AppTitle },
     props: [ 'visible', 'title', 'id'],
 
   };

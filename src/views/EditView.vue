@@ -71,7 +71,6 @@
 
 <script>
 import AppTitle from '../UI/AppTitle.vue'
-import TheTaskForm from '../components/TheTaskForm.vue'
 import AppStep from '../components/AppStep.vue'
 import TheModalDelete from '../components/TheModalDelete.vue'
 import TheModalCancel from '../components/TheModalCancel.vue'
@@ -158,7 +157,7 @@ export default {
         this.canUndo
         this.canRedo
     },
-    components: { AppTitle, TheTaskForm, AppStep, TheModalDelete, TheModalCancel }
+    components: { AppTitle, AppStep, TheModalDelete, TheModalCancel }
 }
 </script>
 
